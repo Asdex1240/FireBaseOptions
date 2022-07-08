@@ -1,0 +1,7 @@
+{
+  "name": "FireStoreOptions",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
