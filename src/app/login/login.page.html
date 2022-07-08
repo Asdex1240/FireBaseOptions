@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <h1 class="ion-text-center">Login</h1>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input placeholder="Escribe tu email" type="text" [(ngModel)]="log.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input placeholder="Escribe tu contraseña" type="password" [(ngModel)]="log.password"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="login()">Iniciar sesión</ion-button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <h1 class="ion-text-center">Registro</h1>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input placeholder="Escribe tu email" type="text" [(ngModel)]="register.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input placeholder="Escribe tu nombre" type="text" [(ngModel)]="register.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Edad</ion-label>
+        <ion-input placeholder="Escribe tu edad" type="number" [(ngModel)]="register.edad"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input placeholder="Escribe tu contraseñña" type="password" [(ngModel)]="register.password" ></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="registerUser()">Registrar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
